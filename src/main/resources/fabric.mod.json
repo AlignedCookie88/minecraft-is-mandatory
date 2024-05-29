@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "minecraft_is_mandatory",
+  "version": "${version}",
+
+  "name": "minecraft is mandatory",
+  "description": "",
+  "authors": [],
+  "contact": {},
+
+  "license": "MIT",
+  "icon": "assets/minecraft_is_mandatory/icon.png",
+
+  "environment": "*",
+  "entrypoints": {},
+
+      "mixins": [
+        "minecraft_is_mandatory.mixins.json"
+      ],
+
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+        "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
