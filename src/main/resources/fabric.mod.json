@@ -2,25 +2,30 @@
   "schemaVersion": 1,
   "id": "minecraft_is_mandatory",
   "version": "${version}",
-
   "name": "minecraft is mandatory",
   "description": "",
   "authors": [],
-  "contact": {},
-
+  "contact": {
+    "repo": "https://github.com/AlignedCookie88/minecraft is mandatory"
+  },
   "license": "MIT",
   "icon": "assets/minecraft_is_mandatory/icon.png",
-
   "environment": "*",
-  "entrypoints": {},
-
-      "mixins": [
-        "minecraft_is_mandatory.mixins.json"
-      ],
-
+  "entrypoints": {
+    "client": [
+      "com.alignedcookie88.minecraft_is_mandatory.client.MinecraftIsMandatoryClient"
+    ],
+    "main": [
+      "com.alignedcookie88.minecraft_is_mandatory.MinecraftIsMandatory"
+    ]
+  },
+  "mixins": [
+    "minecraft_is_mandatory.mixins.json"
+  ],
   "depends": {
     "fabricloader": ">=${loader_version}",
-        "fabric": "*",
-    "minecraft": "${minecraft_version}"
+    "fabric": "*",
+    "minecraft": "${minecraft_version}",
+    "notenoughcrashes": "*"
   }
 }
